@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F233A9E1B7647660006300C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F233A9D1B7647660006300C /* AppDelegate.swift */; };
+		9F233AA01B7647660006300C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F233A9F1B7647660006300C /* ViewController.swift */; };
+		9F233AA31B7647660006300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F233AA11B7647660006300C /* Main.storyboard */; };
+		9F233AA51B7647660006300C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F233AA41B7647660006300C /* Assets.xcassets */; };
+		9F233AA81B7647660006300C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F233AA61B7647660006300C /* LaunchScreen.storyboard */; };
+		9F9D4E781B7680E3004A0829 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9D4E761B7680E3004A0829 /* Interface.storyboard */; };
+		9F9D4E7A1B7680E3004A0829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9D4E791B7680E3004A0829 /* Assets.xcassets */; };
+		9F9D4E811B7680E4004A0829 /* Pure Awesome Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F9D4E801B7680E3004A0829 /* Pure Awesome Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F9D4E861B7680E4004A0829 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D4E851B7680E4004A0829 /* InterfaceController.swift */; };
+		9F9D4E881B7680E4004A0829 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D4E871B7680E4004A0829 /* ExtensionDelegate.swift */; };
+		9F9D4E8A1B7680E4004A0829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9D4E891B7680E4004A0829 /* Assets.xcassets */; };
+		9F9D4E8E1B7680E4004A0829 /* Pure Awesome Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9F9D4E741B7680E3004A0829 /* Pure Awesome Watch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F9D4E821B7680E4004A0829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F233A921B7647660006300C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9D4E7F1B7680E3004A0829;
+			remoteInfo = "Pure Awesome Watch Extension";
+		};
+		9F9D4E8C1B7680E4004A0829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F233A921B7647660006300C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9D4E731B7680E3004A0829;
+			remoteInfo = "Pure Awesome Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F233AD31B7648950006300C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9F9D4E8E1B7680E4004A0829 /* Pure Awesome Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9D4E941B7680E4004A0829 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9F9D4E811B7680E4004A0829 /* Pure Awesome Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F233A9A1B7647660006300C /* Pure Awesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pure Awesome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F233A9D1B7647660006300C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F233A9F1B7647660006300C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F233AA21B7647660006300C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F233AA41B7647660006300C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F233AA71B7647660006300C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F233AA91B7647660006300C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9D4E741B7680E3004A0829 /* Pure Awesome Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pure Awesome Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9D4E771B7680E3004A0829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9F9D4E791B7680E3004A0829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F9D4E7B1B7680E3004A0829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9D4E801B7680E3004A0829 /* Pure Awesome Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pure Awesome Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9D4E851B7680E4004A0829 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9F9D4E871B7680E4004A0829 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9F9D4E891B7680E4004A0829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F9D4E8B1B7680E4004A0829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F233A971B7647660006300C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9D4E7D1B7680E3004A0829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F233A911B7647660006300C = {
+			isa = PBXGroup;
+			children = (
+				9F233A9C1B7647660006300C /* Pure Awesome */,
+				9F9D4E751B7680E3004A0829 /* Pure Awesome Watch */,
+				9F9D4E841B7680E4004A0829 /* Pure Awesome Watch Extension */,
+				9F233A9B1B7647660006300C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F233A9B1B7647660006300C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F233A9A1B7647660006300C /* Pure Awesome.app */,
+				9F9D4E741B7680E3004A0829 /* Pure Awesome Watch.app */,
+				9F9D4E801B7680E3004A0829 /* Pure Awesome Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F233A9C1B7647660006300C /* Pure Awesome */ = {
+			isa = PBXGroup;
+			children = (
+				9F233A9D1B7647660006300C /* AppDelegate.swift */,
+				9F233A9F1B7647660006300C /* ViewController.swift */,
+				9F233AA11B7647660006300C /* Main.storyboard */,
+				9F233AA41B7647660006300C /* Assets.xcassets */,
+				9F233AA61B7647660006300C /* LaunchScreen.storyboard */,
+				9F233AA91B7647660006300C /* Info.plist */,
+			);
+			path = "Pure Awesome";
+			sourceTree = "<group>";
+		};
+		9F9D4E751B7680E3004A0829 /* Pure Awesome Watch */ = {
+			isa = PBXGroup;
+			children = (
+				9F9D4E761B7680E3004A0829 /* Interface.storyboard */,
+				9F9D4E791B7680E3004A0829 /* Assets.xcassets */,
+				9F9D4E7B1B7680E3004A0829 /* Info.plist */,
+			);
+			path = "Pure Awesome Watch";
+			sourceTree = "<group>";
+		};
+		9F9D4E841B7680E4004A0829 /* Pure Awesome Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9F9D4E851B7680E4004A0829 /* InterfaceController.swift */,
+				9F9D4E871B7680E4004A0829 /* ExtensionDelegate.swift */,
+				9F9D4E891B7680E4004A0829 /* Assets.xcassets */,
+				9F9D4E8B1B7680E4004A0829 /* Info.plist */,
+			);
+			path = "Pure Awesome Watch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F233A991B7647660006300C /* Pure Awesome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F233AAC1B7647660006300C /* Build configuration list for PBXNativeTarget "Pure Awesome" */;
+			buildPhases = (
+				9F9D4E9B1B76838C004A0829 /* Run Script */,
+				9F233A961B7647660006300C /* Sources */,
+				9F233A971B7647660006300C /* Frameworks */,
+				9F233A981B7647660006300C /* Resources */,
+				9F233AD31B7648950006300C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F9D4E8D1B7680E4004A0829 /* PBXTargetDependency */,
+			);
+			name = "Pure Awesome";
+			productName = "Pure Awesome";
+			productReference = 9F233A9A1B7647660006300C /* Pure Awesome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F9D4E731B7680E3004A0829 /* Pure Awesome Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9D4E951B7680E4004A0829 /* Build configuration list for PBXNativeTarget "Pure Awesome Watch" */;
+			buildPhases = (
+				9F9D4E721B7680E3004A0829 /* Resources */,
+				9F9D4E941B7680E4004A0829 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F9D4E831B7680E4004A0829 /* PBXTargetDependency */,
+			);
+			name = "Pure Awesome Watch";
+			productName = "Pure Awesome Watch";
+			productReference = 9F9D4E741B7680E3004A0829 /* Pure Awesome Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9F9D4E7F1B7680E3004A0829 /* Pure Awesome Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9D4E8F1B7680E4004A0829 /* Build configuration list for PBXNativeTarget "Pure Awesome Watch Extension" */;
+			buildPhases = (
+				9F9D4EBE1B76998A004A0829 /* Run Script */,
+				9F9D4E7C1B7680E3004A0829 /* Sources */,
+				9F9D4E7D1B7680E3004A0829 /* Frameworks */,
+				9F9D4E7E1B7680E3004A0829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pure Awesome Watch Extension";
+			productName = "Pure Awesome Watch Extension";
+			productReference = 9F9D4E801B7680E3004A0829 /* Pure Awesome Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F233A921B7647660006300C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "stringCode ltd";
+				TargetAttributes = {
+					9F233A991B7647660006300C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					9F9D4E731B7680E3004A0829 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					9F9D4E7F1B7680E3004A0829 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 9F233A951B7647660006300C /* Build configuration list for PBXProject "Pure Awesome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F233A911B7647660006300C;
+			productRefGroup = 9F233A9B1B7647660006300C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F233A991B7647660006300C /* Pure Awesome */,
+				9F9D4E731B7680E3004A0829 /* Pure Awesome Watch */,
+				9F9D4E7F1B7680E3004A0829 /* Pure Awesome Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F233A981B7647660006300C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F233AA81B7647660006300C /* LaunchScreen.storyboard in Resources */,
+				9F233AA51B7647660006300C /* Assets.xcassets in Resources */,
+				9F233AA31B7647660006300C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9D4E721B7680E3004A0829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9D4E7A1B7680E3004A0829 /* Assets.xcassets in Resources */,
+				9F9D4E781B7680E3004A0829 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9D4E7E1B7680E3004A0829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9D4E8A1B7680E4004A0829 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F9D4E9B1B76838C004A0829 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"--------------------------------\\n\\n\"\necho \"Phone\"\necho $TARGET_NAME\necho \"\\n\\n--------------------------------\"\n";
+		};
+		9F9D4EBE1B76998A004A0829 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"--------------------------------\\n\\n\"\necho \"Watch\"\necho $TARGET_NAME\necho \"\\n\\n--------------------------------\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F233A961B7647660006300C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F233AA01B7647660006300C /* ViewController.swift in Sources */,
+				9F233A9E1B7647660006300C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9D4E7C1B7680E3004A0829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9D4E881B7680E4004A0829 /* ExtensionDelegate.swift in Sources */,
+				9F9D4E861B7680E4004A0829 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F9D4E831B7680E4004A0829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9D4E7F1B7680E3004A0829 /* Pure Awesome Watch Extension */;
+			targetProxy = 9F9D4E821B7680E4004A0829 /* PBXContainerItemProxy */;
+		};
+		9F9D4E8D1B7680E4004A0829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9D4E731B7680E3004A0829 /* Pure Awesome Watch */;
+			targetProxy = 9F9D4E8C1B7680E4004A0829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F233AA11B7647660006300C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F233AA21B7647660006300C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F233AA61B7647660006300C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F233AA71B7647660006300C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F9D4E761B7680E3004A0829 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F9D4E771B7680E3004A0829 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F233AAA1B7647660006300C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F233AAB1B7647660006300C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F233AAD1B7647660006300C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "61b6d5dc-07d1-4ed6-a143-a94ceef97772";
+			};
+			name = Debug;
+		};
+		9F233AAE1B7647660006300C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1aa7b1d0-3a70-4bca-8e84-346d9b9b0a7c";
+			};
+			name = Release;
+		};
+		9F233AD41B7658180006300C /* DebugBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DebugBeta;
+		};
+		9F233AD51B7658180006300C /* DebugBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Debug";
+				PRODUCT_NAME = "PA Debug";
+				PROVISIONING_PROFILE = "7cfd8b2e-e454-4503-a25b-58e40012f719";
+			};
+			name = DebugBeta;
+		};
+		9F233AD81B76585C0006300C /* ReleaseBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ReleaseBeta;
+		};
+		9F233AD91B76585C0006300C /* ReleaseBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Beta";
+				PRODUCT_NAME = "PA βeta";
+				PROVISIONING_PROFILE = "e6da8d1d-314c-4a91-b1f7-3ee14d0eff57";
+			};
+			name = ReleaseBeta;
+		};
+		9F9D4E901B7680E4004A0829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "c4c023e3-8961-4ac9-8de1-0b16ebd203fc";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome.watchkitapp";
+			};
+			name = Debug;
+		};
+		9F9D4E911B7680E4004A0829 /* DebugBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Debug.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "83b53779-0bfa-4cd4-b48b-6271c855c525";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Debug.watchkitapp";
+			};
+			name = DebugBeta;
+		};
+		9F9D4E921B7680E4004A0829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "653a34d2-bda7-4b41-8d95-2fb37fd844ff";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome.watchkitapp";
+			};
+			name = Release;
+		};
+		9F9D4E931B7680E4004A0829 /* ReleaseBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Pure Awesome Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Beta.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "992fe905-fc42-45ff-b10d-3af055a5dc0b";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Beta.watchkitapp";
+			};
+			name = ReleaseBeta;
+		};
+		9F9D4E961B7680E4004A0829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Pure_Awesome_Watch_Extension;
+				INFOPLIST_FILE = "Pure Awesome Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "97d8794c-01d6-45ed-8eaf-7a5eb3b14705";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome";
+			};
+			name = Debug;
+		};
+		9F9D4E971B7680E4004A0829 /* DebugBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Pure_Awesome_Watch_Extension;
+				INFOPLIST_FILE = "Pure Awesome Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Debug.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d214ec82-4275-43a4-ba68-d26882b530ee";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Debug";
+			};
+			name = DebugBeta;
+		};
+		9F9D4E981B7680E4004A0829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Pure_Awesome_Watch_Extension;
+				INFOPLIST_FILE = "Pure Awesome Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ae2944f2-e2d3-46ca-b1b9-6e38f8903c9a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome";
+			};
+			name = Release;
+		};
+		9F9D4E991B7680E4004A0829 /* ReleaseBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Pure_Awesome_Watch_Extension;
+				INFOPLIST_FILE = "Pure Awesome Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Beta.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d1bca45a-7cfb-433b-9413-c8ad8d5b173c";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = "uk.co.stringcode.Pure-Awesome-Beta";
+			};
+			name = ReleaseBeta;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F233A951B7647660006300C /* Build configuration list for PBXProject "Pure Awesome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F233AAA1B7647660006300C /* Debug */,
+				9F233AD41B7658180006300C /* DebugBeta */,
+				9F233AAB1B7647660006300C /* Release */,
+				9F233AD81B76585C0006300C /* ReleaseBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F233AAC1B7647660006300C /* Build configuration list for PBXNativeTarget "Pure Awesome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F233AAD1B7647660006300C /* Debug */,
+				9F233AD51B7658180006300C /* DebugBeta */,
+				9F233AAE1B7647660006300C /* Release */,
+				9F233AD91B76585C0006300C /* ReleaseBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9D4E8F1B7680E4004A0829 /* Build configuration list for PBXNativeTarget "Pure Awesome Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9D4E901B7680E4004A0829 /* Debug */,
+				9F9D4E911B7680E4004A0829 /* DebugBeta */,
+				9F9D4E921B7680E4004A0829 /* Release */,
+				9F9D4E931B7680E4004A0829 /* ReleaseBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9D4E951B7680E4004A0829 /* Build configuration list for PBXNativeTarget "Pure Awesome Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9D4E961B7680E4004A0829 /* Debug */,
+				9F9D4E971B7680E4004A0829 /* DebugBeta */,
+				9F9D4E981B7680E4004A0829 /* Release */,
+				9F9D4E991B7680E4004A0829 /* ReleaseBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F233A921B7647660006300C /* Project object */;
+}
