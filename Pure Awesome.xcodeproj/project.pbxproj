@@ -80,6 +80,7 @@
 		9F9D4E871B7680E4004A0829 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		9F9D4E891B7680E4004A0829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F9D4E8B1B7680E4004A0829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEDE4981B90B1E900E539E0 /* icon_processor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icon_processor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				9F233A9C1B7647660006300C /* Pure Awesome */,
 				9F9D4E751B7680E3004A0829 /* Pure Awesome Watch */,
 				9F9D4E841B7680E4004A0829 /* Pure Awesome Watch Extension */,
+				9FEDE4971B90B1E900E539E0 /* Scripts */,
 				9F233A9B1B7647660006300C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +154,14 @@
 				9F9D4E8B1B7680E4004A0829 /* Info.plist */,
 			);
 			path = "Pure Awesome Watch Extension";
+			sourceTree = "<group>";
+		};
+		9FEDE4971B90B1E900E539E0 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9FEDE4981B90B1E900E539E0 /* icon_processor.swift */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
