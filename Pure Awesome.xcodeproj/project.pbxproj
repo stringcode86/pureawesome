@@ -223,12 +223,15 @@
 				TargetAttributes = {
 					9F233A991B7647660006300C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = T8TH53QYXW;
 					};
 					9F9D4E731B7680E3004A0829 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = T8TH53QYXW;
 					};
 					9F9D4E7F1B7680E3004A0829 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = T8TH53QYXW;
 					};
 				};
 			};
@@ -295,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"--------------------------------\\n\\n\"\necho \"Phone\"\necho $TARGET_NAME\necho \"\\n\\n--------------------------------\"\n";
+			shellScript = "PATH_TO_ICON_PROCESSOR=\"$PROJECT_DIR/Scripts/icon_processor.swift\"\nPATH_TO_ORIGIN_ICON=\"$PROJECT_DIR/Pure Awesome/Assets.xcassets/AppIcon.appiconset\"\nPATH_TO_OUTPUT_ICON=\"$PROJECT_DIR/Pure Awesome/Assets.xcassets/AppIconDebug.appiconset\"\nVERSION_NUMBER=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nBUILD_NUMBER=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\n\n#Debug iOS\nBUILD_TYPE=\"D\"\nswift -sdk $(xcrun --show-sdk-path --sdk macosx) \"$PATH_TO_ICON_PROCESSOR\" \"$PATH_TO_ORIGIN_ICON\" \"$PATH_TO_OUTPUT_ICON\" \"$VERSION_NUMBER\" \"$BUILD_NUMBER\" \"$BUILD_TYPE\"\n\n#Debug watchOS\nPATH_TO_ORIGIN_ICON=\"$PROJECT_DIR/Pure Awesome Watch/Assets.xcassets/AppIcon.appiconset\"\nPATH_TO_OUTPUT_ICON=\"$PROJECT_DIR/Pure Awesome Watch/Assets.xcassets/AppIconDebug.appiconset\"\nswift -sdk $(xcrun --show-sdk-path --sdk macosx) \"$PATH_TO_ICON_PROCESSOR\" \"$PATH_TO_ORIGIN_ICON\" \"$PATH_TO_OUTPUT_ICON\" \"$VERSION_NUMBER\" \"$BUILD_NUMBER\" \"$BUILD_TYPE\"\n\n#βeta iOS\nBUILD_TYPE=\"β\"\nPATH_TO_ORIGIN_ICON=\"$PROJECT_DIR/Pure Awesome/Assets.xcassets/AppIcon.appiconset\"\nPATH_TO_OUTPUT_ICON=\"$PROJECT_DIR/Pure Awesome/Assets.xcassets/AppIconBeta.appiconset\"\nswift -sdk $(xcrun --show-sdk-path --sdk macosx) \"$PATH_TO_ICON_PROCESSOR\" \"$PATH_TO_ORIGIN_ICON\" \"$PATH_TO_OUTPUT_ICON\" \"$VERSION_NUMBER\" \"$BUILD_NUMBER\" \"$BUILD_TYPE\"\n\n#βeta watchOS\nPATH_TO_ORIGIN_ICON=\"$PROJECT_DIR/Pure Awesome Watch/Assets.xcassets/AppIcon.appiconset\"\nPATH_TO_OUTPUT_ICON=\"$PROJECT_DIR/Pure Awesome Watch/Assets.xcassets/AppIconBeta.appiconset\"\nswift -sdk $(xcrun --show-sdk-path --sdk macosx) \"$PATH_TO_ICON_PROCESSOR\" \"$PATH_TO_ORIGIN_ICON\" \"$PATH_TO_OUTPUT_ICON\" \"$VERSION_NUMBER\" \"$BUILD_NUMBER\" \"$BUILD_TYPE\"";
 		};
 		9F9D4EBE1B76998A004A0829 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
