@@ -3,10 +3,8 @@ import Accelerate
 import CoreGraphics
 
 func image(withImage image:NSImage, buildVersion:String, buildNumber:String, buildType:String) -> NSImage {
-    //Generate blured image
-    let imageScale = image.recommendedLayerContentsScale(1)
-    let screenScale = NSScreen.mainScreen()!.backingScaleFactor
-    let size = CGSize(width: image.size.width / screenScale * imageScale, height: image.size.height / screenScale * imageScale)
+    let imageScale: CGFloat = image.recommendedLayerContentsScale(1)
+    let size = CGSize(width: image.size.width * imageScale, height: image.size.height * imageScale)
     
     let bluredImage = image.applyBlurWithRadius(size.width * 0.1, tintColor: NSColor(white: 0.11, alpha: 0.3), saturationDeltaFactor: 1.8)
     let bounds = CGRect(origin: CGPointZero, size: size)
@@ -66,8 +64,23 @@ public extension String {
 
 public extension NSImage {
     public func saveAsPNGatPath(path:String, atomically: Bool = true) -> Bool {
-        let data = self.TIFFRepresentationUsingCompression(NSTIFFCompression.None, factor: 1.0)!
-        let bitmap = NSBitmapImageRep(data: data)!
+        let bitmap = NSBitmapImageRep(
+            bitmapDataPlanes: nil,
+            pixelsWide: Int(self.size.width),
+            pixelsHigh: Int(self.size.height),
+            bitsPerSample: 8,
+            samplesPerPixel: 4,
+            hasAlpha: true,
+            isPlanar: false,
+            colorSpaceName: NSCalibratedRGBColorSpace,
+            bytesPerRow: 0,
+            bitsPerPixel: 0)!
+        bitmap.size = self.size
+        
+        NSGraphicsContext.saveGraphicsState()
+        NSGraphicsContext.setCurrentContext(NSGraphicsContext(bitmapImageRep: bitmap))
+        self.drawInRect(CGRect(origin: CGPoint(), size: size), fromRect: CGRect(), operation: .CompositeCopy, fraction: 1.0)
+        NSGraphicsContext.restoreGraphicsState()
         if let imagePGNData: NSData = bitmap.representationUsingType(NSBitmapImageFileType.NSPNGFileType, properties: [NSImageCompressionFactor: 1.0]) {
             return imagePGNData.writeToFile(NSString(string: path).stringByStandardizingPath, atomically: atomically)
         } else {
